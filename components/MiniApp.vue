@@ -10,5 +10,4 @@ const getContact = () => {
 
 <template>
 	<button @click="() => getContact()">Share contact</button>
-	<MainButton text="Open alert" @click="() => showAlert('Hello!')" />
 </template>
