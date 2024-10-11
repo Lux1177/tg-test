@@ -1,22 +1,10 @@
-<script setup lang="ts">
-useHead({
-	script: [
-		{
-			src: 'https://telegram.org/js/telegram-web-app.js',
-			defer: true,
-		},
-	],
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
-	<div>
-		<ClientOnly>
-			<div class="app">
-				<slot></slot>
-			</div>
-		</ClientOnly>
-	</div>
+	<NuxtPage />
+	<ClientOnly>
+		<MiniApp />
+	</ClientOnly>
 </template>
 
 <style>

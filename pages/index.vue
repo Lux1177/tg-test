@@ -1,14 +1,9 @@
-<script setup lang="ts">
-import { useWebAppRequests } from 'vue-tg'
-const requests = useWebAppRequests()
-
-const getContact = () => {
-	requests.requestContact()
-}
-</script>
+<script setup lang="ts"></script>
 
 <template>
-	<button @click="getContact">share contact</button>
+	<section>
+		<h1>Hello</h1>
+	</section>
 </template>
 
 <style scoped>
