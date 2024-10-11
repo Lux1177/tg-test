@@ -7,21 +7,13 @@ useHead({
 		},
 	],
 })
-
-const { useWebApp, useWebAppRequests } = await import('vue-tg')
-
-const requests = useWebAppRequests()
-
-const getContact = () => {
-	requests.requestContact()
-}
 </script>
 
 <template>
 	<div>
 		<ClientOnly>
 			<div class="app">
-				<button @click="getContact">share contact</button>
+				<slot></slot>
 			</div>
 		</ClientOnly>
 	</div>
@@ -34,12 +26,5 @@ const getContact = () => {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-button {
-	height: 20vh;
-	width: 20vw;
-	border: 1px solid black;
-	padding: 2px;
 }
 </style>
